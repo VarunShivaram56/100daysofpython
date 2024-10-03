@@ -16,8 +16,9 @@ print("Hello Bidders! Excited to see you here get ready for the auction")
 a=True
 bid={}
 while(a==True):
-    print("\n"*100)
+    
     b=input("Please enter 'yes' if you want to bid else 'no':\n")
+    print("\n"*100)
     if(b=='yes'):
         print("\n\n")
         e=input("please enter your name:\n")
@@ -34,6 +35,6 @@ max = list(bid.keys())[0]
 for key in bid:
     if(bid[key]>bid[max]):
         max=key
-print("The Highest bidded among the participants is \n")
+print("The Highest bidder among the participants is \n")
 print(f"{max} with a bidding amount of {bid[max]}$\n")
 print(f"Congratulations {max}!!!")
